@@ -1,0 +1,10 @@
+.w-adjust{
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (min-width:100px) and (max-width:1399px) {
+    .w-adjust{
+        width: 100%;
+    }
+}

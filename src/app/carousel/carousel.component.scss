@@ -1,0 +1,66 @@
+.btn-prev{
+    position: absolute;
+    top: 50%;
+    right: 4%;
+}
+
+.btn-next{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+}
+
+.btn-prev, .btn-next{
+    background-color: rgba($color: #ffffff, $alpha: 0.4);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+}
+
+.active{
+    background-color: rgb(254,238,0);
+}
+
+.svg-left, .svg-right{
+    position: absolute;
+    height: 100% !important;
+    width: auto;
+    top: 0px;
+    z-index: 999999999999999999;
+    transition: all 0.5s
+}
+
+.svg-left{
+    left: 0px;
+}
+
+.svg-right{
+    right: 0px;
+}
+
+.btn-prev:hover{
+    right: 1%;
+}
+
+.btn-next:hover{
+    left: 1%;
+}
+
+.btn-prev:hover .icon-unlock{
+    display:none !important;
+}
+
+.btn-next:hover .icon-unlock-1{
+    display:none !important;
+}
+
+.btn-prev:hover .icon-lock{
+    display: block !important;
+}
+
+.btn-next:hover .icon-lock-1{
+    display: block !important;
+}
